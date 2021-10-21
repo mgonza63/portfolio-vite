@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Austin";
+  src: url(./fonts/Austin-Light-Web.woff);
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+}
+:root {
+  --primary-color: #DDE8E4;
+  --background-color: #222C2D;
+
+  --font-primary: "Austin";
+  --font-secondary: forma-djr-micro, sans-serif;
+
+  --font-xl: 4.2em;
+  --font-lg: 3em;
+
+}
+body {
+  background-color: var(--background-color);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: 200;
+}
+.debug {
+  border: 1px solid red;
+}
+main {
+  width: 100%;
+  margin: 0;
+}
+.container {
+  max-width: 62rem;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+
+/* UTILS */
+.centered-x {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.mr-x {
+  margin: 3em 0;
+}
+.main__heading {
+  position: relative;
+  color: var(--primary-color);
+  font-size: var(--font-lg);
+  text-align: center;
+  font-family: var(--font-primary);
+  z-index: 100;
+}
+.main__image {
+  clip-path: inset(2% 10% 5% 12% round 35vw 35vw 0vw 0vw);
+  transition-delay: 1s;
+  transition: clip-path 450ms cubic-bezier(.8,.26,.03,1);
+  transform: translateY(-3em);
+}
+.main__image:hover {
+  clip-path:inset(15% 20% 15% 20% round 25vw 25vw 25.01vw 25.01vw);
+}
+@media screen and (min-width: 30em) {
+  .main__heading {
+    font-size: var(--font-xl);
+  }
+}
