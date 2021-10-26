@@ -43,5 +43,13 @@ function updateCursor(e) {
   });
 }
 
-window.addEventListener("mousemove", (e) => updateCursor(e));
+// window.addEventListener("mousemove", (e) => updateCursor(e));
+console.log(`this is your agent ${navigator.userAgent}`)
+// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+//     !window.addEventListener("mousemove", (e) => updateCursor(e));
 
+// }
+const isMobile = window.matchMedia("only screen and (max-width: 48em)").matches;
+if (!isMobile) {
+  window.addEventListener("mousemove", (e) => updateCursor(e));
+}
