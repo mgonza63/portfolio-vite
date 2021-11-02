@@ -202,6 +202,19 @@ text {
 .container__feature:hover .projects-button--icon{
   border: var(--primary-color) 5px solid;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#footer {
+  padding: 4em 0 0em 0;
+  padding-bottom: 1em;
+}
+.gradient {
+  background: rgb(34,44,45);
+  background: linear-gradient(180deg, rgba(34,44,45,1) 40%, rgb(22, 28, 29) 100%); 
+}
 .blog-container {
   max-width: 48em;
   padding: 0 1rem;
