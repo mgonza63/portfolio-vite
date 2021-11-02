@@ -8,7 +8,7 @@
 :root {
   --primary-color: #dde8e4;
   --background-color: #222c2d;
-  --highlight: #ff593ce5;
+  --highlight: #ec492ce5;
   --font-primary: "Austin";
   --font-secondary: forma-djr-micro, sans-serif;
   --font-xl: 4.2em;
@@ -29,9 +29,23 @@ h2,
 h3 {
   font-weight: 200;
 }
+p {
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+}
 a {
   color: var(--primary-color);
   text-decoration: none;
+
+  transition: color 300ms cubic-bezier(0.8, 0.26, 0.03, 1);
+
+}
+a:hover {
+  color: var(--highlight);
+}
+button {
+  background: none;
+  border: none;
 }
 .centered-x {
   display: flex;
@@ -44,7 +58,9 @@ a {
 .d-flex {
   display: flex;
 }
-
+.highlight {
+  color: var(--highlight);
+}
 .debug {
   border: 1px solid red;
 }
@@ -93,13 +109,7 @@ main {
   color: var(--primary-color);
   padding: 0.5em 0;
 }
-a {
-  transition: color 300ms cubic-bezier(0.8, 0.26, 0.03, 1);
 
-}
-a:hover {
-  color: var(--highlight);
-}
 .main__heading {
   position: relative;
   color: var(--primary-color);
@@ -135,7 +145,7 @@ text {
   opacity: 0.85;
 }
 .projects {
-  padding: 3em 0 0 0;
+  padding: 7em 0 0 0;
   display: block;
 }
 .container__feature {
@@ -143,6 +153,8 @@ text {
 }
 .container__image {
   flex: 1;
+  padding: 1em 0 0 0;
+
 }
 .feature-heading {
   font-size: 2.5em;
@@ -174,6 +186,30 @@ text {
   border-radius: 18px;
   padding: .125em .5em;
   margin-right: .25em;
+  opacity: 0.9;
+}
+.projects-button--icon {
+  width: 130px;
+  height: auto;
+  fill: var(--primary-color);
+  border: var(--primary-color) 2px solid;
+  border-radius: 50%;
+  padding: 1.25em;
+  margin-top: 1em;
+
+  transition: all 200ms ease-in-out;
+}
+.container__feature:hover .projects-button--icon{
+  border: var(--primary-color) 5px solid;
+}
+.blog-container {
+  max-width: 48em;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+.blog-copy {
+  font-size: var(--font-sm);
+  margin-bottom: 0.5em;
 }
 @media screen and (min-width: 30em) {
   .main__heading {
