@@ -16,6 +16,12 @@
   --font-md: 2.2em;
   --font-sm: 1.75em;
 }
+html {
+  scroll-behavior: smooth;
+}
+button {
+  cursor: none;
+}
 body {
   background-color: var(--background-color);
 }
@@ -33,7 +39,12 @@ p {
   font-family: var(--font-secondary);
   color: var(--primary-color);
 }
+small {
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+}
 a {
+  cursor: none;
   color: var(--primary-color);
   text-decoration: none;
 
@@ -213,7 +224,7 @@ footer {
 }
 .gradient {
   background: rgb(34,44,45);
-  background: linear-gradient(180deg, rgba(34,44,45,1) 40%, rgb(22, 28, 29) 100%); 
+  background: linear-gradient(180deg, rgba(34,44,45,1) 44%, rgb(22, 28, 29) 100%); 
 }
 .blog-container {
   max-width: 48em;
@@ -223,6 +234,14 @@ footer {
 .blog-copy {
   font-size: var(--font-sm);
   margin-bottom: 0.5em;
+}
+.aboutme-copy {
+  font-size: var(--font-md);
+  margin-bottom: 0.5em;
+
+}
+.arrow-down {
+  fill: var(--primary-color);
 }
 @media screen and (min-width: 30em) {
   .main__heading {
