@@ -16,7 +16,7 @@
       </div>
       <li class="navbar">
         <ul class="nav-item">
-          <a href="./aboutme.html"> Who am I? </a>
+          <a href="aboutme.html"> Who am I? </a>
         </ul>
         <ul class="nav-item">
           <a href="#projects"> What do I do? </a>
@@ -32,7 +32,7 @@
         <div class="mr-x">
           <h1 class="main__heading">DESIGNING SMOOTH USER EXPERIENCES</h1>
           <div class="centered-x">
-            <a href="/aboutme.html">
+            <a href="aboutme.html">
               <img
                 class="main__image"
                 src="./images/IMG_1946_jpg 1.png"
@@ -163,7 +163,7 @@
       </div>
     </div>
     <div class="contact container" id="contact">
-      <form name="contact" action="./success.html" netlify>
+      <form name="contact" method="POST" data-netlify="true" action="success.html" netlify>
         <p class="contact-copy" style="margin-bottom: 1.25em;">
           Contact me if you are interested on working with me or have any
           questions.
@@ -178,7 +178,7 @@
       </div>
       <div class="form-group">
         <label for="name"><p class="highlight contact-copy">Message:</p></label>
-        <input class="contact-input" type="text" name="message" required/>
+        <textarea class="contact-input" type="text" name="message" required></textarea>
     </div>
     <button class="contact-button" type="submit">Send</button>
 

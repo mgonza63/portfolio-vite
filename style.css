@@ -231,6 +231,7 @@ text {
 }
 .contact-copy {
   font-size: var(--font-lg);
+  /* font-family: var(--font-primary); */
 }
 .contact-input {
   padding: 0.5em 0;
@@ -245,7 +246,7 @@ text {
   margin: 1.25em 0 2em;
 }
 .contact-button {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 2em;
   background: var(--highlight);
   padding: 0.5em 1em;
