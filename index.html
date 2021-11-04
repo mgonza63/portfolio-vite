@@ -11,7 +11,9 @@
     <div class="cursor cursor--large"></div>
     <div class="cursor cursor--small"></div>
     <header class="container d-flex header" id="header">
-      <div><span class="logo"><a href="/">Mauricio Gonzalez</a></span></div>
+      <div>
+        <span class="logo"><a href="/">Mauricio Gonzalez</a></span>
+      </div>
       <li class="navbar">
         <ul class="nav-item">
           <a href="./aboutme.html"> Who am I? </a>
@@ -30,7 +32,13 @@
         <div class="mr-x">
           <h1 class="main__heading">DESIGNING SMOOTH USER EXPERIENCES</h1>
           <div class="centered-x">
-            <img class="main__image" src="./images/IMG_1946_jpg 1.png" alt="" />
+            <a href="/aboutme.html">
+              <img
+                class="main__image"
+                src="./images/IMG_1946_jpg 1.png"
+                alt="me standing pushing my hair back with my hand"
+              />
+            </a>
           </div>
         </div>
         <svg class="circleText" viewBox="0 0 500 500">
@@ -55,6 +63,11 @@
     <div class="container" id="projects">
       <div class="projects">
         <div class="container__feature">
+          <div class="breadcrumb">
+            <p>Projects</p>
+            <div class="breadcrumb__separator"><p>/</p></div>
+            <p>Client Work</p>
+          </div>
           <h2 class="feature-heading">Qtax Multiservices</h2>
           <ul class="pill-list">
             <li class="pill"><small>WEB DEVELOPMENT</small></li>
@@ -148,6 +161,28 @@
           />
         </div>
       </div>
+    </div>
+    <div class="contact container" id="contact">
+      <form name="contact" action="./success.html" netlify>
+        <p class="contact-copy" style="margin-bottom: 1.25em;">
+          Contact me if you are interested on working with me or have any
+          questions.
+        </p>
+        <div class="form-group">
+            <label for="name"><p class="highlight contact-copy">Your Name:</p></label>
+            <input class="contact-input" type="text" name="name" required/>
+        </div>
+        <div class="form-group">
+          <label for="name"><p class="highlight contact-copy">Email:</p></label>
+          <input class="contact-input" type="email" name="email" required/>
+      </div>
+      <div class="form-group">
+        <label for="name"><p class="highlight contact-copy">Message:</p></label>
+        <input class="contact-input" type="text" name="message" required/>
+    </div>
+    <button class="contact-button" type="submit">Send</button>
+
+      </form>
     </div>
     <div class="gradient">
       <footer>
